@@ -1,0 +1,229 @@
+/* モバイル画面 ----------------------------------- */
+
+@media (max-width: 800px){
+  body{
+    background-color: var(--header-background);
+  }
+
+  body .for_laptop{
+    display: none;
+  }
+  
+  body .for_mobile{
+    display: block;
+  }
+  
+  body .for_mobile header{
+    border-bottom: 1px solid var(--header-border-bottom);
+    /* border: 1px solid #ff00ff; */
+    height: 70px;
+    padding: 0px 10px 10px 10px;
+  }
+  
+  body .for_mobile header .header_logo{
+    /* border: 1px solid #0000ff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  body .for_mobile header .header_logo .account{
+    /* border: 1px solid #000000; */
+  }
+
+  body .for_mobile header .header_logo .account a svg{
+    /* border: 1px solid #ff9999; */
+    width: 50px;
+    height: 50px;
+
+    vertical-align: bottom;
+  }
+
+  body .for_mobile header .header_logo div a img{
+    /* border: 1px solid #999999; */
+    width: 90px;
+    height: 70px;
+  }
+
+  body .for_mobile header .header_logo .header_title{
+    width: 50px;
+    height: 50px;
+  }
+  
+  body .for_mobile .main_index{
+    /* border: 1px solid #ff0000; */
+  }
+  
+  body .for_mobile .global_nav{
+    /* border: 1px solid #ff0000; */
+    width: 100%;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+  }
+  
+  body .for_mobile .global_nav ul{
+    /* border: 1px solid #ff0000; */
+    display: flex;
+    flex-direction: row;
+
+    height: 100px;
+  }
+  
+  body .for_mobile .global_nav ul li{
+    border-top: 1px solid var(--global-nav-border-top);
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  body .for_mobile .global_nav ul li svg{
+    width: 34px;
+    height: 34px;
+    vertical-align: bottom;
+  }
+
+}
+
+/* ノーパソ or タブレット端末画面 ----------------- */
+
+@media (min-width: 801px){
+  body{}
+
+  body .for_mobile{
+    display: none;
+  }
+
+  body .for_laptop{
+    display: block;
+  }
+
+  body header{
+    /* border: 1px solid #0000ff; */
+    border-bottom: 1px solid #666666;
+    height: 70px;
+  
+    padding: 8px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  body .for_laptop header .header_left_area{
+    /* border: 1px solid #000000; */
+    width: 120px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  body .for_laptop header .header_left_area .account{}
+  
+  body .for_laptop header .header_left_area .account a svg{
+    vertical-align: bottom;
+  }
+  
+  body .for_laptop header .header_left_area .user_name{}
+  
+  body .for_laptop header .header_logo{
+    /* border: 1px solid #ff0000; */
+  }
+  
+  body .for_laptop header .header_logo a img{
+    /* border: 1px solid #0000ff; */
+    width: 80px;
+    height: 60px;
+  }
+  
+  body .for_laptop header .header_title{
+    width: 120px;
+  }
+  
+  body .for_laptop .container{
+    /* border: 1px solid #00ff00; */
+    width: auto;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  body .for_laptop .container .container_buffer{
+    /* border: 1px solid #000000; */
+    width: 1400px;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  body .for_laptop .container .container_buffer .global_nav{
+    /* border: 1px solid #00ff00; */
+    width: 20%;
+    height: 100%;
+    padding: 14px;
+  
+    box-sizing: content-box;
+  }
+  
+  body .for_laptop .container .container_buffer .global_nav ul{
+    /* border: 1px solid #0000ff; */
+  }
+  
+  body .for_laptop .container .container_buffer .global_nav ul li{
+    /* border: 1px solid #0000ff; */
+    padding: 4px;
+    transition: 0.4s;
+  }
+  
+  body .for_laptop .container .container_buffer .global_nav ul li:hover{
+    background-color: #eeeeee;
+    border-radius: 2px;
+  }
+  
+  body .for_laptop .container .container_buffer .global_nav ul li a svg{
+    width: 20px;
+    height: 20px;
+  }
+
+  body .for_laptop .container .container_buffer .global_nav ul li a span{
+    margin-left: 2px;
+  }
+  
+  
+  body .for_laptop .container .container_buffer .main_index{
+    /* border: 1px solid #000000; */
+    width: 60%;
+    height: 100%;
+  
+    box-sizing: content-box;
+  }
+  
+  body .for_laptop .container .container_buffer .side_area{
+    /* border: 1px solid #000000; */
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+  
+    box-sizing: content-box;
+  }
+  
+  body .for_laptop .container .container_buffer .side_area .search_area{
+    /* border: 1px solid #000000; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body .for_laptop .container .container_buffer .side_area .search_area .group_search{
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+  }
+}
